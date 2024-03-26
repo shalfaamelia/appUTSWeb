@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Order Here!</h2>
+        <h4 class="item-name-left">Menu Pastry!</h4>
+        <h4 class="price-right">This Price!</h4>
+        <hr>
+        <div class="item">
+            <input type="checkbox" id="spicyFloss" value="12500" onchange="calculateTotal()">
+            <span class="item-name">Spicy Floss</span>
+            <span class="price">Rp 12.500</span>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="flossRoll" value="15000" onchange="calculateTotal()">
+            <span class="item-name">Floss Roll</span>
+            <span class="price">Rp 15.000</span>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="milkyBun" value="10000" onchange="calculateTotal()">
+            <span class="item-name">Milky Bun</span>
+            <span class="price">Rp 10.000</span>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="sugarPillow" value="12000" onchange="calculateTotal()"> 
+            <span class="item-name">Sugar Pillow</span>
+            <span class="price">Rp 12.000</span>
+        </div>
+        <div class="item">
+            <input type="checkbox" id="chocoMeises" value="14000" onchange="calculateTotal()">
+            <span class="item-name">Choco Meises</span>
+            <span class="price">Rp 14.000</span>
+        </div>
+        <div class="item">
+            <input type="checkbox"  id="sausageDiva" value="18000" onchange="calculateTotal()">
+            <span class="item-name">Sausage Diva</span>
+            <span class="price">Rp 18.000</span>
+        </div>
+        <div class="item">
+            <input type="checkbox"  id="americanCheeseRoll" value="25500" onchange="calculateTotal()">
+            <span class="item-name">American Cheese Roll</span>
+            <span class="price">Rp 25.500</span>
+        </div>
+        <div class="item">
+            <input type="checkbox"  id="bananaChocolateDanish" value="16000" onchange="calculateTotal()">
+            <span class="item-name">Banana Chocolate Danish</span>
+            <span class="price">Rp 16.000</span>
+        </div>
+        <hr>
+        <div>
+            <label class="total" for="total">Total: Rp <span id="total"></span>
+        </div>
+        <button type="submit">Checkout</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="loginForm" action="#" method="post" autocomplete="off">
+			<h2>Login Form App UTS Web</h2>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" required><br>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" minlength="9" required><br>
+            <div id="response" class="valid"></div>
+            <button type="submit">Login</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

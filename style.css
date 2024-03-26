@@ -1,0 +1,137 @@
+/* CSS login.html dan order.html */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(wallpaper.jpeg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color:rgb(231, 190, 197);
+    margin: 0 auto;
+}
+
+form{
+    margin: 20px auto;
+}
+
+h2 {
+    color: white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+    color: rgb(134, 92, 99);
+}
+
+/* CSS login.html */
+.container .valid{
+    box-sizing: border-box;
+    background-color: brown;
+    font-size: small;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+    color: palevioletred;
+}
+
+input[type="password"] {
+	min-height: 40px;
+}
+
+button[type="submit"] {
+	width: 100%;
+	padding: 10px;
+    margin-top: 15px;
+	background-color:palevioletred;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color:pink;
+}
+
+/* CSS order.html */
+#orderForm {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+.item-name-left{
+    margin-bottom: -42px;
+    color: rgb(134, 92, 99);
+}
+
+.price-right{
+    text-align: right;
+    color: rgb(134, 92, 99);
+}
+
+hr{
+    height: 3px;
+    background-color: palevioletred;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.item {
+    color: rgb(105, 12, 71);
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-name{
+    flex-grow: 1;
+    text-align-last: left;
+}
+
+.price{
+    color:rgb(105, 12, 71);
+    text-align: right;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    text-decoration: line-through;
+    color: white;
+}
+
+.total{
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(134, 92, 99);
+}
